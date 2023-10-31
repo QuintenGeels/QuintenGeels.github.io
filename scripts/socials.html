@@ -7,23 +7,54 @@
 </head>
 <body>
     <div class="nav">
-        <h1 id="title-item">Socials</h1>
+        <h1 id="title-item">About me</h1>
         <div class="button-container">
-            <button onclick="location.href = '../scripts/projects.html';">projects</button>
-            <button onclick="location.href = '../scripts/contact.html';">contact</button>
+            <button onclick="location.href = '../scripts/projects.html';">Projects</button>
+            <button onclick="location.href = '../scripts/contact.html';">Contact</button>
             <button onclick="location.href = '../index.html';">Home</button>
         </div>
     </div>
-    <div class="text-container">
-        <ul>
-            <li>
-                <img id="webshop-img" src="../img/Screenshot 2023-09-26 142801.png" height="903" width="1891" alt="Your browser does not support the webshop image!"/>
-            </li>
-            <li>
-                <button onclick="location.href = '../scripts/projects.html';">Go Back</button>
-            </li>
-        </ul>
+    <div id="container-projects">
+        <div class="about-me">
+            <img class="about-img" src="../img/insight.png" height="512" width="512"/>
+            <p>
+                <h1>Personal info</h1>
+                <br><br>
+                I'm Quinten Geels and i'm becoming a software developer at the sintlucas.
+                <br> <br>
+                I want to be a web developer because i like working on websites a lot. I feel like i'm really learning a lot in these 2 years. I just want to keep going and keep learning.
+            </p>
+        </div>
+        <div class="about-me">
+            <img class="about-img" src="../img/data.png" height="512" width="512"/>
+            <p>
+                <h1>Ambitions</h1>
+                <br><br>
+                I have quite the ambitions of a programmer. I do already have some skills working with php, javascript, css and html. I also do make projects in my free time that's where is learned code first. I really want to make a webshop and make it live to visit.
+            </p>
+        </div>
+        <div class="about-me">
+            <img class="about-img" src="../img/contract.png" height="512" width="512"/>
+            <p>
+                <h1>Why hire me?</h1>
+                <br><br>
+                That's a good question.
+                <br><br>
+                I learn fast by watching people do work or by working on projects myself. I develop over time like i feel i did at the Sintlucas by just doing stuff.
+                <br><br>
+                I am not only in web development active but i can make games as well.
+            </p>
+        </div>
     </div>
+    <footer id="footer-projects">
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </footer>
     <script src="../js/myscript.js"></script>
 </body>
 </html>
