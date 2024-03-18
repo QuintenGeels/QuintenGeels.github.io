@@ -1,45 +1,49 @@
 * {
     /*border: solid 1px red;*/
 }
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
     color: #17252A;
+    display: flex;
+    flex-direction: column;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
     opacity: 1;
-    background-image:  radial-gradient(#2B7A78 0.5px, transparent 0.5px), radial-gradient(#2B7A78 0.5px, #f1f1f1 0.5px);
+    background-image:  radial-gradient(#2B7A78 0.8px, transparent 0.8px), radial-gradient(#2B7A78 0.8px, #f1f1f1 0.8px);
     background-size: 20px 20px;
     background-position: 0 0,10px 10px;
+    flex: 1;
+    min-height: 100vh;
 }
+
+
 img {
     padding: 4px;
     background: #3AAFA9;
     box-shadow: 5px 10px #2B7A78;
     border-radius: 5px;
 }
+
 video {
     padding: 4px;
     background: #3AAFA9;
     box-shadow: 7px 14px #2B7A78;
     border-radius: 5px;
 }
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #abbaba;
-    color: #000;
-    height: 100vh;
-}
+
 li {
     list-style-type: none;
 }
+
 .fa {
     padding: 1.6rem;
     font-size: 3rem;
@@ -50,32 +54,40 @@ li {
     border-radius: 3rem;
     box-shadow: 3px 7px #858585;
 }
+
 .fa:hover {
     opacity: 0.7;
 }
+
 .fa-youtube {
     background: #bb0000;
     color: white;
 }
+
 .fa-instagram {
     background: #ea4c89;
     color: white;
 }
+
 .fa-snapchat-ghost {
     background: #fffc00;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 #footer-projects{
     margin-top: 1rem;
 }
+
 #title {
     margin-top: 0;
     margin-bottom: 8rem;
 }
+
 #title:hover {
     cursor: default;
 }
+
 #project-title {
     text-align: center;
     margin-bottom: -2rem;
@@ -83,15 +95,18 @@ li {
     font-size: 2.5rem;
     text-transform: capitalize;
 }
+
 #name {
     margin-bottom: 8rem;
     font-size: 4rem;
     transition: 1s;
 }
+
 #name:hover {
     font-size: 5rem;
     cursor: default;
 }
+
 .container {
     display: flex;
     flex-wrap: nowrap;
@@ -101,72 +116,83 @@ li {
     width: 100vw; /* Full viewport width */
     height: 85vh; /* Full viewport height */
 }
+
 .text-container {
     text-align: center;
     text-transform: capitalize;
 }
+
 button {
     font-size: 1.5rem;
     padding: 0.625rem 1.25rem;
     background-color: #3AAFA9;
     border-radius: 20px;
 }
+
 button:hover {
     background-color: #DEF2F1;
     cursor: pointer;
 }
+
 .item {
     width: 30rem;
     height: 30rem;
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0px 0px;
+    padding: 0;
     background-color: #2B7A78;
 }
+
 #title-item {
     background-color: #3AAFA9;
     padding: 0.625rem 3rem;
     border-radius: 10px;
     box-shadow: 3px 7px black;
 }
+
 #title-item:hover {
     cursor: pointer;
 }
 
 .projects{
     width: 32vw;
-    height: 32vh;
+    height: fit-content;
     margin: 1rem;
     transition: 1s;
     text-align: center;
 }
+
 .projects:hover {
     width: 34vw;
     height: 34vh;
     margin: 1rem;
     cursor: pointer;
 }
+
 #container-projects{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100vw;
+    margin-top: 2rem;
 }
+
 #webshop-img {
-     width: 35vw;
-     height: auto;
-     margin: 5rem 1rem 1rem 1rem;
-     text-align: center;
- }
+    width: 35vw;
+    height: auto;
+    margin: 5rem 1rem 1rem 1rem;
+    text-align: center;
+}
 
 #text-container {
     width: 35vw;
-    height: 100%;
+    height: fit-content;
     margin: 5rem 1rem 1rem 1rem;
     padding: 1rem;
     border-radius: 15px;
@@ -174,10 +200,11 @@ button:hover {
     box-shadow: 3px 7px #2B7A78;
     font-size: 1rem;
 }
+
 .about-me {
     background: #3AAFA9;
     box-shadow: 3px 7px #2B7A78;
-    margin: 5rem 0rem 0rem 0rem;
+    margin: 5rem 0 0 0;
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -186,6 +213,7 @@ button:hover {
     width: 20vw;
     height: auto;
 }
+
 .about-img {
     width: auto;
     height: 10vh;
@@ -193,4 +221,21 @@ button:hover {
     margin: 0;
     border: 2px solid black;
 }
-
+@media only screen and (min-width: 475px) {
+    .projects{
+        width: 40vw;
+        height: fit-content;
+        margin: 1rem;
+        transition: 1s;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 640px) {
+    .projects{
+        width: 60vw;
+        height: fit-content;
+        margin: 1rem;
+        transition: 1s;
+        text-align: center;
+    }
+}
